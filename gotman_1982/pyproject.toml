@@ -1,0 +1,29 @@
+[project]
+name = "gotman-1982"
+version = "0.1.0"
+description = "SzCORE compatible reproduction of Jean Gotman, 'Automatic recognition of epileptic seizures in the EEG', Clin. Neurophysioly, 1982."
+authors = [
+    { name = "Clément Weihao Samanos", email = "clement.samanos@epfl.ch" },
+    { name = "Jonathan Dan", email = "jonathan.dan@epfl.ch" }
+]
+dependencies = [
+    "numpy>=1.25",
+    "scipy>=1.14.1",
+    "epilepsy2bids>=0.0.3",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gotman_1982"]
