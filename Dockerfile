@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ARG PYTHON_VERSION=3.12
-FROM python:${PYTHON_VERSION}-slim as base
+FROM python:${PYTHON_VERSION}-slim AS base
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -43,4 +43,4 @@ ENV INPUT=""
 ENV OUTPUT=""
 
 # Run the application
-CMD python3 -m gotman_1982 "/data/$INPUT" "/output/$OUTPUT"
+CMD ['python3", "-m", "gotman_1982", "/data/$INPUT", "/output/$OUTPUT"]
