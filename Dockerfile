@@ -43,4 +43,4 @@ ENV INPUT=""
 ENV OUTPUT=""
 
 # Run the application
-CMD ['python3", "-m", "gotman_1982", "/data/$INPUT", "/output/$OUTPUT"]
+CMD python3 -m gotman_1982 "/data/$INPUT" "/output/$OUTPUT"
