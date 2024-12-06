@@ -3,7 +3,8 @@ name = "gotman-1982"
 version = "0.1.0"
 description = "SzCORE compatible reproduction of Jean Gotman, 'Automatic recognition of epileptic seizures in the EEG', Clin. Neurophysioly, 1982."
 authors = [
-    { name = "Clément Weihao Samanos", email = "clement.samanos@epfl.ch" },
+    { name = "Jean Gotman"},
+    { name = "Clément Weihao Samanos"},
     { name = "Jonathan Dan", email = "jonathan.dan@epfl.ch" }
 ]
 dependencies = [
